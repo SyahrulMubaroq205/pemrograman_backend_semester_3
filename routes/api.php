@@ -7,4 +7,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/student', [StudentController::class, 'index']);
 Route::post('/student', [StudentController::class, 'store']);
 Route::patch('/student/{student}', [StudentController::class, 'update']);
+Route::get('/student/{student}', [StudentController::class, 'show']);
 Route::delete('/student/{student}', [StudentController::class, 'destroy']);
