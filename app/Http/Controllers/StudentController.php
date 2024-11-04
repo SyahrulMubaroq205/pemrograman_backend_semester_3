@@ -66,6 +66,16 @@ class StudentController extends Controller
         return response()->json($data, 201);
     }
 
+    public function show(Student $student)
+    {
+        $data = [
+            'message' => 'Get is show succesfully',
+            'data' => $student,
+        ];
+
+        return response()->json($data, 200);
+    }
+
     /**
      * Remove the specified resource from storage.
      */
